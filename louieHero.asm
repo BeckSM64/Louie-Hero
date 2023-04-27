@@ -9,7 +9,7 @@ NOP
 
 // Force every level to use Louie as the bomber type
 .org 0x000745C0
-ADDIU T0, R0, $0007
+ADDIU T0, R0, $0006
 
 // Removes interaction between Louie and launcher in Battle Room
 .org 0x00078C40
