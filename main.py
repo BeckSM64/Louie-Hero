@@ -145,6 +145,16 @@ def read_file(fname, output_dir):
         file_array[0x000F8E2A] = 0x00
         file_array[0x000F8E2B] = 0x00
 
+        # Change starting position for Warp Room
+        file_array[0x000F8E3C] = 0x0A
+        file_array[0x000F8E3D] = 0x14
+        file_array[0x000F8E3E] = 0x00
+        file_array[0x000F8E3F] = 0x3C
+        file_array[0x000F8E40] = 0x01
+        file_array[0x000F8E41] = 0xA4
+        file_array[0x000F8E42] = 0x00
+        file_array[0x000F8E43] = 0x00
+
         return file_array
 
 # writes the modified data back to the rom
