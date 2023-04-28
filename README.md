@@ -7,3 +7,19 @@ In order to play the ROM you'll need a clean copy of Bomberman Hero (JP only rig
 # How to generate it
 Once you have CajeASM installed, launch the GUI and specify the path of your clean Bomberman Hero ROM and the ASM included in this repository. Click assemble and you're all set.
 ![](./Screenshots/CajeASM.png)
+
+# Known Issues
+There are a few levels that are currently not beatable with Louie:
+- Bubble Hole
+- Magma Dam (Exit 1, can take Exit 2)
+- Aqua Tank
+- Hard Coaster
+- Mad Coaster
+- Move Stone
+- Heaven Sky
+
+I baked in debug mode for now so people can mess around with it and just skip the unbeatable levels, but currently working on fixing those issues
+
+# Questions
+If you have questions or need help generating the ROM, you can contact me directly
+Discord Beck#9214
