@@ -1,2 +1,9 @@
 # Louie-Hero
-A script to run on a clean copy of Bomberman Hero to generate a ROM hack which exclusively features Louie
+A ROM hack for Bomberman Hero which exclusively features Louie
+
+# Requirements
+In order to play the ROM you'll need a clean copy of Bomberman Hero (JP only right now), and CajeASM. You can get CajeASM [here](https://www.romhacking.net/utilities/1085/). I can't link to where you can get a JP ROM for Bomberman Hero, but I believe in your abilities to find one.
+
+# How to generate it
+Once you have CajeASM installed, launch the GUI and specify the path of your clean Bomberman Hero ROM and the ASM included in this repository. Click assemble and you're all set.
+![](./Screenshots/CajeASM.png)
