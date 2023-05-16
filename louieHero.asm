@@ -11,6 +11,10 @@ NOP
 .org 0x000745C0
 ADDIU T0, R0, $0006
 
+// Remove Bomberman model from Louie's back
+.org 0x00149B40
+hex { 24 06 00 12 }
+
 // Removes interaction between Louie and launcher in Battle Room
 .org 0x00078C40
 ADDIU T9, R0, $0001
@@ -40,13 +44,11 @@ NOP
 
 // Force beam to already have spawned on start of Move Stone
 .org 0x0001A800
-ADDIU T6, R0, 0x0004
+ORI T6, R0, 0x0004
 SH T6, 0x00B2 (T7)
-
-// Make beam work when value is set to 0x0008, too
-// lazy to fix above code to equal 4 on level load
-.org 0x000DE624
-ADDIU AT, R0, 0x0008
+.org 0x0008F424
+NOP
+NOP
 
 // Remove mirror room mirror bomber
 .org 0x002256E0
