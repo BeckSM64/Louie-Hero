@@ -33,6 +33,21 @@ NOP
 .org 0x00222780
 hex { 00 41 03 A2 }
 
+// Make beam work with Louie in Move Stone
+.org 0x000DE694
+NOP
+NOP
+
+// Force beam to already have spawned on start of Move Stone
+.org 0x0001A800
+ADDIU T6, R0, 0x0004
+SH T6, 0x00B2 (T7)
+
+// Make beam work when value is set to 0x0008, too
+// lazy to fix above code to equal 4 on level load
+.org 0x000DE624
+ADDIU AT, R0, 0x0008
+
 // Remove mirror room mirror bomber
 .org 0x002256E0
 NOP
