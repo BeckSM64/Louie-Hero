@@ -50,6 +50,14 @@ SH T6, 0x00B2 (T7)
 NOP
 NOP
 
+// Remove snake boss from Heaven Sky and replace with beam
+.org 0x00224C30
+hex { 01 90 }
+.org 0x00224C40
+NOP
+.org 0x00224C50
+NOP
+
 // Remove mirror room mirror bomber
 .org 0x002256E0
 NOP
