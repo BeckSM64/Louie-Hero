@@ -33,6 +33,11 @@ NOP
 NOP
 NOP
 
+// Replace enemy at top of Aqua Tank with beam to end level
+// TODO: Beam goes through the floor and can be triggered early, fix this
+.org 0x002225B0
+hex { 01 90 }
+
 // Replace final turret with box in Aquaway
 .org 0x00222780
 hex { 00 41 03 A2 }
