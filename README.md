@@ -15,7 +15,6 @@ There are a few levels that are currently not beatable with Louie:
 - Aqua Tank
 - Hard Coaster
 - Mad Coaster
-- Heaven Sky
 
 I baked in debug mode for now so people can mess around with it and just skip the unbeatable levels, but currently working on fixing those issues
 
