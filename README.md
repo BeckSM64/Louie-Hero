@@ -10,7 +10,6 @@ Once you have CajeASM installed, launch the GUI and specify the path of your cle
 
 # Known Issues
 There are a few levels that are currently not beatable with Louie:
-- Bubble Hole
 - Magma Dam (Exit 1, can take Exit 2)
 - Hard Coaster
 - Mad Coaster

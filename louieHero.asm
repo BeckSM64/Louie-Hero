@@ -101,3 +101,8 @@ hex { FD 6C FF E2 30 0C 00 00 }
 // Change starting position for Warp Room
 .org 0x000F8E3C
 hex { 0A 14 00 3C 01 A4 00 00 }
+
+// Add beam to bubble hole
+// TODO: Fix so game doesn't crash when touching bouncy terrain
+.org 0x0021E5B0
+hex { 01 90 }
