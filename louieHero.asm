@@ -43,9 +43,10 @@ hex { 01 90 }
 hex { 00 41 03 A2 }
 
 // Make beam work with Louie in Move Stone
-.org 0x000DE694
-NOP
-NOP
+.org 0x000DE690
+OR A0, R0, R0
+JAL 0x00069E68
+ADDIU A1, R0, 0x0001
 
 // Force beam to already have spawned on start of Move Stone
 .org 0x0001A800
