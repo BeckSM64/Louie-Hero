@@ -118,3 +118,6 @@ hex { 00 41 01 DF 00 00 01 59 }
 // Force Door to be open already in Hard Coaster
 .org 0x0007A584 // Address in RAM: 0x80088060
 SB T4, 0x523C (AT)
+
+.org 0x002233E0
+hex { 01 90 00 5A 02 1C 0B B8}
