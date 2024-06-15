@@ -9,9 +9,37 @@ Once you have CajeASM installed, launch the GUI and specify the path of your cle
 ![](./Screenshots/CajeASM.png)
 
 # Known Issues
-There are a few levels that are currently not beatable with Louie:
+There is one level which has an exit which currently cannot be taken with Louie:
 - Magma Dam (Exit 1, can take Exit 2)
+- Float Zone
+
+There are several levels which had to be heavily modified so they can be completed with Louie:
+- Move Stone
+  - Forced beam to spawn on level start becaause Louie can't move the blocks
+- Hades Crater
+  - Removed the door since Louie will fall and can't destroy the pillars
+- Death Temple
+  - Removed the cage door since hitting the switch with a bomb is required to open it
+- Aqua Tank
+  - Added beam to end level since Louie cannot destroy the tank
+- Aquaway
+  - Added a box at the end of the level so Louie can reach the exit
+- Heaven Sky
+  - Replaced the mini boss with a level exit beam since Louie can't deal damage to the boss
+- Mirror Room
+  - Removed mirror bomber because with Louie it crashes the game
+  - Removed mirror doors because hitting a switch with a bomb is required to open them
+- Rockn' Road
+  - Changed starting position to after the warp since Louie cannot take the warps currently
+- Warp Room
+  - Again, changed starting position to after the warp since Louie can't take warps
+- Bubble Hole
+  - Added beam so level can be completed
+- Hard Coaster
+  - Added box bridge to the pit so Louie can get across since coasters don't work
+  - Forced player to have all four crystal shards on level start so the exit door opens
 - Mad Coaster
+  - Added beam at the start of the level since coasters don't work
 
 I baked in debug mode for now so people can mess around with it and just skip the unbeatable levels, but currently working on fixing those issues
 
