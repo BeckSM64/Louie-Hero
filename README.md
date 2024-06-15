@@ -11,6 +11,8 @@ Once you have CajeASM installed, launch the GUI and specify the path of your cle
 # Known Issues
 There are some levels which currently cannot be completed with Louie:
 - Magma Dam (Exit 1, can take Exit 2)
+- Hyper Room (Can take heavy room exit, secret room exit is unreachable)
+- Secret Room
 
 There are several levels which had to be heavily modified so they can be completed with Louie:
 - Move Stone
@@ -43,6 +45,13 @@ There are several levels which had to be heavily modified so they can be complet
   - Added a bunch of boxes to form stairs to climb up the level since the bubble powerup doesn't work with Louie
   - Removed the rising platform that blocked the last opening since the switch can't be hit with Louie
   - Raised the final spiked platform to be level with the exit so Louie can exit the stage
+ 
+Various other known issues:
+- Bouncy terrain in Bubble Hole crashes the game when touched
+- Water doesn't damage Louie
+- Can't activate coasters in Secret Room, Hard Coaster, or Mad Coaster
+- Can't activate switches
+- Reflection in Mirror Room crashes the game if present
 
 I baked in debug mode for now so people can mess around with it and just skip the unbeatable levels, but currently working on fixing those issues
 
