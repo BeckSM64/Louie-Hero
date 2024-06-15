@@ -106,3 +106,15 @@ hex { 0A 14 00 3C 01 A4 00 00 }
 // TODO: Fix so game doesn't crash when touching bouncy terrain
 .org 0x0021E5B0
 hex { 01 90 }
+
+// Add boxes to middle of pit in hard coaster
+.org 0x00222D70
+hex { 00 41 01 DF 00 00 01 D7 }
+.org 0x00222D60
+hex { 00 41 01 DF 00 00 02 55 }
+.org 0x00222D50
+hex { 00 41 01 DF 00 00 01 59 }
+
+// Force Door to be open already in Hard Coaster
+.org 0x0007A584 // Address in RAM: 0x80088060
+SB T4, 0x523C (AT)
