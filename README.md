@@ -9,7 +9,7 @@ Once you have CajeASM installed, launch the GUI and specify the path of your cle
 ![](./Screenshots/CajeASM.png)
 
 # Known Issues
-There is one level which has an exit which currently cannot be taken with Louie:
+There are some levels which currently cannot be completed with Louie:
 - Magma Dam (Exit 1, can take Exit 2)
 - Float Zone
 
