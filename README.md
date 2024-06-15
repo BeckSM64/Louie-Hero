@@ -18,4 +18,4 @@ I baked in debug mode for now so people can mess around with it and just skip th
 
 # Questions
 If you have questions or need help generating the ROM, you can contact me directly  
-Discord Beck#9214
+Discord Beck64
