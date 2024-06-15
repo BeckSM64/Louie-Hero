@@ -122,3 +122,36 @@ SB T4, 0x523C (AT)
 // Add beam so Mad Coaster can be completed
 .org 0x002233E0
 hex { 01 90 00 5A 02 1C 0B B8}
+
+// Float Zone, First Floor, add box stairs
+.org 0x002222A0
+hex { 00 41 03 3A 04 7A FD 82 }
+
+.org 0x00222320
+hex { 00 41 03 B8 05 F4 FD 82 }
+
+// Float Zone, Second Floor, add box stairs
+.org 0x00222370
+hex { 00 41 03 B8 08 B8 FE A2 }
+
+.org 0x00222410
+hex { 00 41 03 3A 09 B4 FE A2 }
+
+// Float Zone, Third Floor, add box stairs
+.org 0x00222470
+hex { 00 41 03 3A 0C 78 FD 12 }
+
+.org 0x00222480
+hex { 00 41 03 B8 0D 74 FD 12 }
+
+// Float Zone, remove platform blocking last opening
+.org 0x002224D0
+hex { 00 00 00 00 00 00 00 00 }
+
+// Float Zone, remove exit door because switch can't be hit
+.org 0x00222490
+hex { 00 00 00 00 00 00 00 00 }
+
+// Float Zone, raise the spiked platform so Louie can enter the exit
+.org 0x002224E0
+hex { 00 60 02 B2 10 2C FA D8 }
