@@ -11,7 +11,6 @@ Once you have CajeASM installed, launch the GUI and specify the path of your cle
 # Known Issues
 There are some levels which currently cannot be completed with Louie:
 - Magma Dam (Exit 1, can take Exit 2)
-- Float Zone
 
 There are several levels which had to be heavily modified so they can be completed with Louie:
 - Move Stone
@@ -42,6 +41,10 @@ There are several levels which had to be heavily modified so they can be complet
   - Added beam at the start of the level since coasters don't work
 
 I baked in debug mode for now so people can mess around with it and just skip the unbeatable levels, but currently working on fixing those issues
+
+# Special Thanks
+- Thanks to CedarBranch for their help with removing the Bomberman model from Louie's back and fixing the crash on entering the exit beam in Move Stone
+- Thanks to .Coockie and everyone in the BomberHack server for help with N64 ASM hacking in general
 
 # Questions
 If you have questions or need help generating the ROM, you can contact me directly  
