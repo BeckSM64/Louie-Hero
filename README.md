@@ -11,7 +11,6 @@ Once you have CajeASM installed, launch the GUI and specify the path of your cle
 # Known Issues
 There are a few levels that are currently not beatable with Louie:
 - Magma Dam (Exit 1, can take Exit 2)
-- Hard Coaster
 - Mad Coaster
 
 I baked in debug mode for now so people can mess around with it and just skip the unbeatable levels, but currently working on fixing those issues
