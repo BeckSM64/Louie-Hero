@@ -39,6 +39,10 @@ There are several levels which had to be heavily modified so they can be complet
   - Forced player to have all four crystal shards on level start so the exit door opens
 - Mad Coaster
   - Added beam at the start of the level since coasters don't work
+- Float Zone
+  - Added a bunch of boxes to form stairs to climb up the level since the bubble powerup doesn't work with Louie
+  - Removed the rising platform that blocked the last opening since the switch can't be hit with Louie
+  - Raised the final spiked platform to be level with the exit so Louie can exit the stage
 
 I baked in debug mode for now so people can mess around with it and just skip the unbeatable levels, but currently working on fixing those issues
 
