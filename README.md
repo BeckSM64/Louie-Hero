@@ -52,6 +52,7 @@ Various other known issues:
 - Can't activate coasters in Secret Room, Hard Coaster, or Mad Coaster
 - Can't activate switches
 - Reflection in Mirror Room crashes the game if present
+- Louie can't take warps
 
 I baked in debug mode for now so people can mess around with it and just skip the unbeatable levels, but currently working on fixing those issues
 
