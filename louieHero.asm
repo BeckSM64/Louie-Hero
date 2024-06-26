@@ -119,10 +119,6 @@ hex { 00 41 01 DF 00 00 01 59 }
 .org 0x0007A584 // Address in RAM: 0x80088060
 SB T4, 0x523C (AT)
 
-// Add beam so Mad Coaster can be completed
-.org 0x002233E0
-hex { 01 90 00 5A 02 1C 0B B8}
-
 // Float Zone, First Floor, add box stairs
 .org 0x002222A0
 hex { 00 41 03 3A 04 7A FD 82 }
@@ -155,3 +151,10 @@ hex { 00 00 00 00 00 00 00 00 }
 // Float Zone, raise the spiked platform so Louie can enter the exit
 .org 0x002224E0
 hex { 00 60 02 B2 10 2C FA D8 }
+
+.org 0x000782E4 // Should work
+JAL 0x00085914
+
+// Replace bag 3 with beam till crash is fixed
+// .org 0x00226180
+// // hex { 01 E6 FF E2 00 F0 FF 8E }

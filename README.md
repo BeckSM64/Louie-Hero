@@ -36,7 +36,6 @@ There are several levels which had to be heavily modified so they can be complet
 - Bubble Hole
   - Added beam so level can be completed
 - Hard Coaster
-  - Added box bridge to the pit so Louie can get across since coasters don't work
   - Forced player to have all four crystal shards on level start so the exit door opens
 - Mad Coaster
   - Added beam at the start of the level since coasters don't work
