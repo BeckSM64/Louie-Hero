@@ -99,17 +99,8 @@ NOP
 .org 0x0021E5B0
 hex { 01 90 }
 
-// Add boxes to middle of pit in hard coaster
-.org 0x00222D70
-hex { 00 41 01 DF 00 00 01 D7 }
-.org 0x00222D60
-hex { 00 41 01 DF 00 00 02 55 }
-.org 0x00222D50
-hex { 00 41 01 DF 00 00 01 59 }
-
-// Force Door to be open already in Hard Coaster
-.org 0x0007A584 // Address in RAM: 0x80088060
-SB T4, 0x523C (AT)
+.org 0x00222B20
+hex { 00 00 }
 
 // Float Zone, First Floor, add box stairs
 .org 0x002222A0
