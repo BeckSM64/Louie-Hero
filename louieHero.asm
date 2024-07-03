@@ -151,7 +151,7 @@ JAL 0x00085914
 // .org 0x00226180
 // // hex { 01 E6 FF E2 00 F0 FF 8E }
 
-// Fix warps in all levels (Collision with enemies breaks after doing this???)
+// Fix warps in all levels
 .org 0x000789A4 // Remove check for bomber type so Louie can trigger warp
 NOP
 
@@ -161,8 +161,6 @@ JAL 0x0004CB70 // Change the routine call location to custom function
 .org 0x0004D770 // Stripped down function for warp (no animation, just updates player position)
 ADDIU SP, SP, 0xFFE0
 SW RA, 0x001C (SP)
-LUI T7, 0x8017
-LW T7, 0x752C (T7)
 NOP
 LUI AT, 0x8017
 LUI T1, 0x8017
@@ -182,12 +180,6 @@ LW T3, 0x752C (T3)
 LWC1 F8, 0xE438 (AT)
 NOP
 SWC1 F8, 0x0008 (T3)
-LUI AT, 0x8017
-LUI T4, 0x8017
-LW T4, 0x752C (T4)
-LWC1 F10, 0xE43C (AT)
-NOP
-SWC1 F10, 0x001C (T4)
 NOP
 LW RA, 0x001C (SP)
 ADDIU SP, SP, 0x20
