@@ -94,14 +94,6 @@ NOP
 NOP
 NOP
 
-// Change starting position for Rockn' Road
-.org 0x000F8E24
-hex { FD 6C FF E2 30 0C 00 00 }
-
-// Change starting position for Warp Room
-.org 0x000F8E3C
-hex { 0A 14 00 3C 01 A4 00 00 }
-
 // Add beam to bubble hole
 // TODO: Fix so game doesn't crash when touching bouncy terrain
 .org 0x0021E5B0
@@ -158,3 +150,46 @@ JAL 0x00085914
 // Replace bag 3 with beam till crash is fixed
 // .org 0x00226180
 // // hex { 01 E6 FF E2 00 F0 FF 8E }
+
+// Fix warps in all levels (Collision with enemies breaks after doing this???)
+.org 0x000789A4 // Remove check for bomber type so Louie can trigger warp
+NOP
+
+.org 0x000789AC
+JAL 0x0004CB70 // Change the routine call location to custom function
+
+.org 0x0004D770 // Stripped down function for warp (no animation, just updates player position)
+ADDIU SP, SP, 0xFFE0
+SW RA, 0x001C (SP)
+LUI T7, 0x8017
+LW T7, 0x752C (T7)
+NOP
+LUI AT, 0x8017
+LUI T1, 0x8017
+LW T1, 0x752C (T1)
+LWC1 F4, 0xE430 (AT)
+NOP
+SWC1 F4, 0x0000 (T1)
+LUI AT, 0x8017
+LUI T2, 0x8017
+LW T2, 0x752C (T2)
+LWC1 F6, 0xE424 (AT)
+NOP
+SWC1 F6, 0x0004 (T2)
+LUI AT, 0x8017
+LUI T3, 0x8017
+LW T3, 0x752C (T3)
+LWC1 F8, 0xE438 (AT)
+NOP
+SWC1 F8, 0x0008 (T3)
+LUI AT, 0x8017
+LUI T4, 0x8017
+LW T4, 0x752C (T4)
+LWC1 F10, 0xE43C (AT)
+NOP
+SWC1 F10, 0x001C (T4)
+NOP
+LW RA, 0x001C (SP)
+ADDIU SP, SP, 0x20
+JR RA
+NOP

@@ -30,10 +30,6 @@ There are several levels which had to be heavily modified so they can be complet
 - Mirror Room
   - Removed mirror bomber because with Louie it crashes the game
   - Removed mirror doors because hitting a switch with a bomb is required to open them
-- Rockn' Road
-  - Changed starting position to after the warp since Louie cannot take the warps currently
-- Warp Room
-  - Again, changed starting position to after the warp since Louie can't take warps
 - Bubble Hole
   - Added beam so level can be completed
 - Hard Coaster
@@ -48,7 +44,6 @@ Various other known issues:
 - Water doesn't damage Louie
 - Can't activate switches
 - Reflection in Mirror Room crashes the game if present
-- Louie can't take warps
 
 I baked in debug mode for now so people can mess around with it and just skip the unbeatable levels, but currently working on fixing those issues
 
